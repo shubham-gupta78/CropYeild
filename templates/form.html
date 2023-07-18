@@ -1,0 +1,27 @@
+<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='styles/form.css')}}">
+<div class="container">  
+    <form id="contact" action="{{ url_for("tocheck")}}" method="post">
+      <h3>Yield Predictor</h3>
+      <br>
+      <fieldset>
+        <input placeholder="Area" id="area" name="area" type="text" tabindex="1" required autofocus>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Crop" id="crop" name="crop" type="text" tabindex="2" required>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Avg Rainfall" id="rainfall" name="rain" type="text" tabindex="3" required>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Avg Pesticides" id="pest" name="pest" type="text" tabindex="4" required>
+      </fieldset>
+      <fieldset>
+        <input placeholder="Avg Temperature" id="temp" name="temp" type="text" tabindex="5" required></textarea>
+      </fieldset>
+      <fieldset>
+        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+      </fieldset>
+    </form>
+   
+    
+  </div>

@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title>Result</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='styles/form.css')}}">
+  </head>
+  <body>
+    <div class="container" >
+      <form id="contactt">
+        <p>Yield for</p><br>
+        <p>Area: {{country}}</p><br>
+        <p>Crop: {{crop}}</p><br>
+        <p>Rainfall: {{rainfall}}</p><br>
+        <p>Pesticides: {{pesticides}}</p><br>
+        <p>Temperature: {{temperature}}</p><br>
+        <p>is</p><br>
+        <p>{{ result }}</p>
+        <p>hg/ha</p>
+      </form>
+    </div>
+  </body>
+</html> 
